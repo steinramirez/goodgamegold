@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@material-ui/core";
+import GoogleAdSense from 'react-simple-adsense';
 
 
 function Content() {
@@ -47,6 +48,14 @@ function Content() {
     <Button className="buttoncta" style={buttonStyle}>
       Buy Here
     </Button>
+    <GoogleAdSense
+    html={
+      '<ins class="adsbygoogle"\n' +
+      'style="display:inline-block;width:728px;height:90px"\n' +
+      'data-ad-client="ca-pub-4812206787996960"\n' +
+      'data-ad-slot="3989020352"></ins>'
+    }
+  /> 
   </div>
   );
 
