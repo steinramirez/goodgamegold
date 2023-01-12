@@ -23,9 +23,9 @@ function Content() {
   }
   const buttonStyle = {
     borderRadius: '50px',
-    border: '5px solid #B72222',
-    width:'20vw',
-    height: '10hw',
+    border: '3px solid #B72222',
+    width:'15vw',
+    height: '8hw',
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
@@ -34,8 +34,7 @@ function Content() {
     color: '#B72222',
     fontStyle: 'normal',
     fontWeight: '400',
-    fontSize: '2vw',
-    lineHeight: '71px',
+    fontSize: '1.5vw',
     textAlign: 'center',
     marginRight: '3vw'
   }

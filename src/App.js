@@ -34,7 +34,7 @@ function App() {
       <WindowSize />
       <Content /> 
       <CtaSection />
-      <GoogleAdSense
+      <GoogleAdSense className='ads'
     html={
       '<ins class="adsbygoogle"\n' +
       'style="display:flex;width:920px;height:90px"\n' +

@@ -38,3 +38,10 @@
   align-content: center;
   justify-content: center;
 }
+.ads{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
