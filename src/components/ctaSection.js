@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@material-ui/core";
-import GoogleAdSense from 'react-simple-adsense';
 
 
 function Content() {
@@ -11,10 +10,11 @@ function Content() {
     display: 'flex',
     color: 'rgb(24,24,24)',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    textAlign: 'center',
+    alignItems: 'right',
+    textAlign: 'right',
     fontSize: '5vw',
-    gap:'20px'
+    gap:'20px',
+    flexDirection: 'column',
   }
   const stylesText = {
     fontSize: '2vw',
@@ -41,22 +41,18 @@ function Content() {
   }
   return (
   <div style={styles} className='ctaSection'>
-    
+    <div>
     <h2 className="textcta" style={stylesText}>
       {text}
     </h2>
     <Button className="buttoncta" style={buttonStyle}>
       Buy Here
     </Button>
-    <GoogleAdSense
-    html={
-      '<ins class="adsbygoogle"\n' +
-      'style="display:inline-block;width:728px;height:90px"\n' +
-      'data-ad-client="ca-pub-4812206787996960"\n' +
-      'data-ad-slot="3989020352"></ins>'
-    }
-  /> 
+    </div>
+  
+    
   </div>
+  
   );
 
 }

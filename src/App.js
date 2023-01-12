@@ -29,7 +29,12 @@ function App() {
       
       <header className="App-header">
       <div style={{width: `${width}px`}}>
-       <GoogleAdSense
+       
+      <Navbar /> 
+      <WindowSize />
+      <Content /> 
+      <CtaSection />
+      <GoogleAdSense
     html={
       '<ins class="adsbygoogle"\n' +
       'style="display:inline-block;width:728px;height:90px"\n' +
@@ -37,10 +42,6 @@ function App() {
       'data-ad-slot="3989020352"></ins>'
     }
   /> 
-      <Navbar /> 
-      <WindowSize />
-      <Content /> 
-      <CtaSection />
       <LogoSection />
       <Footer />
       </div>
