@@ -37,7 +37,7 @@ function App() {
       <GoogleAdSense
     html={
       '<ins class="adsbygoogle"\n' +
-      'style="display:inline-block;width:920px;height:90px"\n' +
+      'style="display:flex;width:920px;height:90px"\n' +
       'data-ad-client="ca-pub-4812206787996960"\n' +
       'data-ad-slot="3989020352"></ins>'
     }
