@@ -32,3 +32,9 @@
   background-position-y: -10px;
   background-position-x: 50px;
 }
+.adsbygoogle{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
