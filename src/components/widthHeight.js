@@ -22,10 +22,16 @@ function useWindowSize() {
 }
 const style = {
   position: 'fixed',
+  right:'20px',
+  bottom:'20px',
   index: '999',
   background:'black',
   height: '20px',
-  fontSize:'15px'
+  fontSize:'15px',
+  borderRadius: '20px',
+  padding: '10px',
+  marginTop: '10px',
+  marginLeft: '5px'
   
 
 }

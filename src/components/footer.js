@@ -28,6 +28,7 @@ const inStyle = {
   display: 'flex',
   flexDirection: 'column',
   color: '#ffffff',
+  width: '200px',
 }
 const footer = {
   display: 'flex',

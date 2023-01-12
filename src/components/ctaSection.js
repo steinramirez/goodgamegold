@@ -3,7 +3,7 @@ import { Button } from "@material-ui/core";
 
 
 function Content() {
-  const text = 'Compra stickers de tus \r\n JUEGOS, ANIME Y BANDAS FAVORITAS';
+  const text = `Compra stickers de tus JUEGOS, ANIME Y BANDAS FAVORITAS`;
   const styles = {
     width: '100%',
     height: '387px',
@@ -12,11 +12,10 @@ function Content() {
     justifyContent: 'space-between',
     alignItems: 'right',
     textAlign: 'right',
-    fontSize: '5vw',
     gap: '20px',
     flexDirection: 'column',
   }
-  const styles2 = {
+  const responsive = {
     width: '100%',
     height: '200px',
     display: 'flex',
@@ -24,36 +23,36 @@ function Content() {
     justifyContent: 'space-between',
     alignItems: 'center',
     textAlign: 'center',
-    fontSize: '5vw',
     gap: '20px',
     flexDirection: 'column',
   }
   const stylesText = {
-    fontSize: '2vw',
+    fontSize: '3vw',
     margin: '3vw',
-    marginLeft: '300px',
+    marginLeft: '15rem',
     marginTop: '50px'
   }
 
   const buttonStyle = {
+    background: '#B72222',
     borderRadius: '50px',
-    border: '3px solid #B72222',
-    width: '15vw',
+    border: '2px solid #B72222',
+    width: '18vw',
     height: '8hw',
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
     display: 'flex',
     margin: '0 auto',
-    color: '#B72222',
+    color: 'white',
     fontStyle: 'normal',
     fontWeight: '400',
-    fontSize: '1.5vw',
+    fontSize: '2vw',
     textAlign: 'center',
     marginRight: '3vw'
   }
   return (
-    <div style={window.innerWidth >= 1620 ? styles : styles2} className='ctaSection'>
+    <div style={window.innerWidth >= 800 ? styles : responsive} className='ctaSection'>
       <div>
         <h2 className="textcta" style={stylesText}>
           {text}

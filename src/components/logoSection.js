@@ -16,25 +16,25 @@ function LogoSection() {
     color: 'white',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: '20px',
+    gap: '30px',
   }
   const responsive = {
-    width: '80%',
-    height: '40%',
+    width: '60%',
+    height: '70%',
     background: '#161616',
     display: 'flex',
     borderRadius: '40px',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: '10px',
+    gap: '50px',
     filter: 'saturate(0%)',
     boxShadow: '0 3px 10px 0 gray',
     
   }
   const logos = {
     width: '90%',
-    height: '30%',
+    height: '40%',
     background: '#161616',
     display: 'flex',
     flexDirection: 'row',
@@ -47,28 +47,24 @@ function LogoSection() {
   
   return (<div className="logoSection" style={styles}>
       <style>
-        {`
-          .cards>div{
-            display: flex;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 20px;
-            padding:0px 70px 0 70px;
+        {
+          `
+          img{
+            object-fit: cover;
           }
-        `}
+          `
+        }
       </style>
     <div><h2>{textHeader}</h2></div>
-    <div className='cards' style={window.innerWidth>=714?logos:responsive}>
-      <div>
-        <img src={ThugsG} width={'400rem'} />
+    <div  style={window.innerWidth>=714?logos:responsive}>
+      <div className="image">
+        <img src={ThugsG} width='400px' style={{objectFit: 'contain'}} />
       </div>
-      <div>
-        <img src={LogoEtransfer} width='40%' />
+      <div className="image">
+        <img src={LogoEtransfer} width='400px' style={{objectFit: 'contain'}} />
       </div>
-      <div>
-      <img src={PepperMedia} width='40%' />
+      <div className="image">
+      <img src={PepperMedia} width='400px' style={{objectFit: 'contain'}} />
       </div>
     </div>
   </div>
