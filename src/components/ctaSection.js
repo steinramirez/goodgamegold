@@ -13,18 +13,32 @@ function Content() {
     alignItems: 'right',
     textAlign: 'right',
     fontSize: '5vw',
-    gap:'20px',
+    gap: '20px',
+    flexDirection: 'column',
+  }
+  const styles2 = {
+    width: '100%',
+    height: '200px',
+    display: 'flex',
+    color: 'rgb(24,24,24)',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    textAlign: 'center',
+    fontSize: '5vw',
+    gap: '20px',
     flexDirection: 'column',
   }
   const stylesText = {
     fontSize: '2vw',
     margin: '3vw',
-    marginLeft: '400px',
+    marginLeft: '300px',
+    marginTop: '50px'
   }
+
   const buttonStyle = {
     borderRadius: '50px',
     border: '3px solid #B72222',
-    width:'15vw',
+    width: '15vw',
     height: '8hw',
     alignItems: 'center',
     justifyContent: 'center',
@@ -39,19 +53,19 @@ function Content() {
     marginRight: '3vw'
   }
   return (
-  <div style={styles} className='ctaSection'>
-    <div>
-    <h2 className="textcta" style={stylesText}>
-      {text}
-    </h2>
-    <Button className="buttoncta" style={buttonStyle}>
-      Buy Here
-    </Button>
+    <div style={window.innerWidth >= 1620 ? styles : styles2} className='ctaSection'>
+      <div>
+        <h2 className="textcta" style={stylesText}>
+          {text}
+        </h2>
+        <Button className="buttoncta" style={buttonStyle}>
+          Buy Here
+        </Button>
+      </div>
+
+
     </div>
-  
-    
-  </div>
-  
+
   );
 
 }

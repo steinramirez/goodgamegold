@@ -1,9 +1,11 @@
 import React from "react";
 import LogoEtransfer from '../assets/logoetransfer.png';
 import ThugsG from '../assets/thugsg.png';
+import PepperMedia from '../assets/peppermedialogoweb.png';
 
 
 function LogoSection() {
+  const w = window.innerWidth ;
   const textHeader = 'Próximos proyectos'
   const styles = {
     width: '100%',
@@ -16,21 +18,34 @@ function LogoSection() {
     alignItems: 'center',
     gap: '20px',
   }
+  const responsive = {
+    width: '80%',
+    height: '40%',
+    background: '#161616',
+    display: 'flex',
+    borderRadius: '40px',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '10px',
+    filter: 'saturate(0%)',
+    boxShadow: '0 3px 10px 0 gray',
+    
+  }
   const logos = {
     width: '90%',
     height: '30%',
     background: '#161616',
     display: 'flex',
+    flexDirection: 'row',
     borderRadius: '40px',
     alignItems: 'center',
     filter: 'saturate(0%)',
     boxShadow: '0 3px 10px 0 gray',
     
   }
-  const PepperMedia = (text) => {
-    return <div className="Epilogue-text">{text}</div> ;
-  }
-  return (<div style={styles}>
+  
+  return (<div className="logoSection" style={styles}>
       <style>
         {`
           .cards>div{
@@ -38,22 +53,23 @@ function LogoSection() {
             align-items: center;
             align-content: center;
             justify-content: center;
+            flex-direction: column;
+            gap: 20px;
             padding:0px 70px 0 70px;
-          }
-          .Epilogue-text {
-            font-family: 'Epilogue';
           }
         `}
       </style>
     <div><h2>{textHeader}</h2></div>
-    <div className='cards' style={logos}>
+    <div className='cards' style={window.innerWidth>=714?logos:responsive}>
       <div>
-        <img src={ThugsG} width='100%' />
+        <img src={ThugsG} width={'400rem'} />
       </div>
       <div>
-        <img src={LogoEtransfer} width='30%' />
+        <img src={LogoEtransfer} width='40%' />
       </div>
-      {PepperMedia('PepperMedia')}
+      <div>
+      <img src={PepperMedia} width='40%' />
+      </div>
     </div>
   </div>
   );

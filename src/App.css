@@ -4,6 +4,7 @@
 }
 * {
   margin:0 auto;
+  max-width: 100%;
 }
 
 .App-header {
@@ -24,6 +25,7 @@
   font-family: 'Epilogue';
   font-size: 2.5rem;
   opacity: 50%;
+  object-fit: contain;
 }
 .ctaSection{
   background:url('./assets/controls.png'), #fff;
@@ -31,6 +33,7 @@
   background-size: contain;
   background-position-y: -10px;
   background-position-x: 50px;
+  transition-duration: 1s;
 }
 .adsbygoogle{
   display: flex;
@@ -45,3 +48,10 @@
   justify-content: center;
   text-align: center;
 }
+ img {
+  width:200px;
+  object-fit:cover;
+ }
+ .logoSection{
+  transition-duration: 1s;
+ }
