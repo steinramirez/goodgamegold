@@ -56,7 +56,7 @@ function LogoSection() {
         }
       </style>
     <div><h2>{textHeader}</h2></div>
-    <div  style={window.innerWidth>=714?logos:responsive}>
+    <div  style={w>=714?logos:responsive}>
       <div className="image">
         <img src={ThugsG} width='400px' style={{objectFit: 'contain'}} />
       </div>

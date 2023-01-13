@@ -48,7 +48,6 @@ function Content() {
     fontStyle: 'normal',
     fontWeight: '400',
     fontSize: '2vw',
-    textAlign: 'center',
     marginRight: '3vw'
   }
   return (
